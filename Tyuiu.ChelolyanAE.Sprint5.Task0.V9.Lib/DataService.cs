@@ -8,7 +8,7 @@ namespace Tyuiu.ChelolyanAE.Sprint5.Task0.V9.Lib
         public string SaveToFileTextData(int x)
         {
             string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
-            double res = (Math.Pow(x, 3)) / (Math.Pow(x, 2) - 1);
+            double res = Math.Round((Math.Pow(x, 3)) / (Math.Pow(x, 2) - 1), 3);
             File.WriteAllText(path, Convert.ToString(res));
             return path;
         }
