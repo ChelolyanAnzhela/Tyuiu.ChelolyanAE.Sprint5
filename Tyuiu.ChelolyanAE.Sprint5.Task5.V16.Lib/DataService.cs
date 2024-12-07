@@ -19,7 +19,7 @@ namespace Tyuiu.ChelolyanAE.Sprint5.Task5.V16.Lib
                     {
                         if (a[i] == Math.Truncate(a[i]))
                         {
-                            if (a[i] % 10 == 0)
+                            if (a[i] % 10 == 0 && a[i]!=0)
                             {
                                 maxi=Math.Max(maxi, a[i]);
                               
