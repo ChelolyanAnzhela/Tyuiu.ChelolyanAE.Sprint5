@@ -22,15 +22,31 @@ namespace Tyuiu.ChelolyanAE.Sprint5.Task7.V20.Lib
             {
                 if ((chr == 'с') || (chr == 'С'))
                 {
-                    if (LastChar == true)
+                    if (chr == 'С')
                     {
-                        LastChar = false;
+                        if (LastChar == true)
+                        {
+                            LastChar = false;
+                        }
+                        else
+                        {
+                            LastChar = true;
+                            s += 'С';
+                        }
                     }
                     else
                     {
-                        LastChar = true;
-                        s += 'с';
+                        if (LastChar == true)
+                        {
+                            LastChar = false;
+                        }
+                        else
+                        {
+                            LastChar = true;
+                            s += 'с';
+                        }
                     }
+
                 }
                 else
                 {
